@@ -1,77 +1,50 @@
-/*Exercice 1*/
+/*EXERCICE 1*/
 
-/*Somme*/
+/*Addition*/
 
-function add (values)
-{
-    let sum = values[0];              
-    for (let i = 1; i < values.length; i++) 
-    {
-         sum += values[i];
-    }
-    
-    return sum;
+function add(a, b) {
+    return a + b;
 }
 
-let values = [21,21];
-console.log(add(values));
+console.log(add(21, 21));
 
 
 
+/*Soustraction*/
 
-/*Différence*/
-
-function sub (values2)
-{
-    let diff = values2[0];
-    
-    for(let i = 1; i < values2.length; i++) 
-    {
-        diff -= values2[i];
-    }
-    
-    return diff;
+function sub(a, b) {
+    return a - b;
 }
 
-let values2 = [63,21];
-console.log(sub(values2));
+console.log(sub(63, 21));
 
 
 
-/*Produit*/
+/*Multiplication*/
 
-function mult (values3)
-{
-    let product = values3[0];
-    
-    for(let i = 1; i < values3.length; i++) 
-    {
-        product *= values3[i];
-    }
-    
-    return product;
+function mult(a, b) {
+    return a * b;
 }
 
-let values3 = [21,2];
-console.log(mult(values3));
+console.log(mult(21, 2));
 
 
 
+/*Division*/
 
-/*Quotient*/
-
-function div (values4)
-{
-    let quotient = values4[0];
-    
-    for(let i = 1; i < values4.length; i++) 
-    {
-        quotient /= values4[i];
-    }
-    
-    return quotient;
+function div(a, b) {
+    return a / b;
 }
 
-let values4 = [42,2];
-console.log(div(values4));
+console.log(div(84, 2));
+
+
+/*Modulo*/
+
+function mod(a, b) {
+    return a % b;
+}
+
+console.log(mod(42, 2));
+
 
