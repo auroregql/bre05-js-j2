@@ -48,3 +48,43 @@ function mod(a, b) {
 console.log(mod(42, 2));
 
 
+/* EXERCICE 2*/
+
+function askUserOperation () {
+   let operation = window.prompt("Quelle operation souhaitez vous faire ? (+,-,*,/,%)");
+   return operation;
+}
+
+function askUserFirstNumber () {
+    let firstnumber = window.prompt("Quel premier nombre choisissez-vous ?");
+    return Number (firstnumber);
+}
+
+function askUserSecondNumber () {
+    let secondnumber = window.prompt ("Quel second nombre choisissez-vous ?");
+    return Number (secondnumber);
+}
+
+let op = askUserOperation ();
+let a = askUserFirstNumber ();
+let b = askUserSecondNumber();
+
+
+let result;
+
+if (op === "+") {
+    result = a + b;
+} else if (op === "-") {
+    result = a - b;
+} else if (op === "*") {
+    result = a * b;
+} else if (op === "/") {
+    result = a / b;
+} else if (op === "%") {
+    result = a % b;
+} else {
+    result = "Opération non reconnue";
+}
+
+console.log(result);
+window.alert(`Le resultat est : ${result}`);
