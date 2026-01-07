@@ -88,3 +88,25 @@ if (op === "+") {
 
 console.log(result);
 window.alert(`Le resultat est : ${result}`);
+
+
+
+/* EXERCICE 3*/
+
+function calculator() {
+    let op = askUserOperation();
+    let a = askUserFirstNumber();
+    let b = askUserSecondNumber();
+    let result;
+    
+    if(op === "+") result = add(a,b);
+    else if(op === "-") result = sub(a,b);
+    else if(op === "*") result = mult(a,b);
+    else if(op === "/") result = div(a,b);
+    else if(op === "%") result = mod(a,b);
+    else result = "Opération non reconnue";
+
+    window.alert(`Le résultat est : ${result}`);
+}
+
+calculator();
